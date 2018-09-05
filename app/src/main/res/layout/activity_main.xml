@@ -1,18 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context="app.fingetprint.com.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/headerLayout"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/activity_margin_top100"
+        android:layout_height="wrap_content">
 
-</android.support.constraint.ConstraintLayout>
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_action_fingerprint"
+            android:id="@+id/icon"
+            android:paddingTop="2dp"
+            android:layout_marginBottom="@dimen/activity_margin_bottom30"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textPrimaryDark"
+            android:textSize="@dimen/activity_textsize_24"
+            android:text="@string/title_fingerprint"
+            android:layout_marginLeft="@dimen/activity_margin_5"
+            android:layout_marginRight="@dimen/activity_margin_5"
+            android:layout_marginTop="@dimen/activity_margin_top20"
+            android:layout_marginBottom="@dimen/activity_margin_bottom30"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textPrimaryDark"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:id="@+id/desc"
+            android:text="@string/desc_fingerprint"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:paddingEnd="@dimen/activity_padding_30"
+            android:paddingStart="@dimen/activity_padding_30"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/errorText"
+            android:textSize="@dimen/activity_textsize_16"
+            android:textAlignment="center"
+            android:id="@+id/errorText"
+            android:paddingEnd="@dimen/activity_padding_30"
+            android:paddingStart="@dimen/activity_padding_30"
+            android:layout_marginTop="@dimen/activity_margin_top20"
+            android:gravity="center"/>
+
+    </LinearLayout>
+</RelativeLayout>
