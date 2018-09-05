@@ -1,4 +1,4 @@
-package app.fingetprint.com;
+package app.fingerprint.com;
 
 import android.Manifest;
 import android.app.Activity;
@@ -10,7 +10,6 @@ import android.os.Build;
 import android.os.CancellationSignal;
 import android.support.annotation.RequiresApi;
 import android.support.v4.app.ActivityCompat;
-import android.widget.TextView;
 import android.widget.Toast;
 
 /**

@@ -1,4 +1,4 @@
-package app.fingetprint.com;
+package app.fingerprint.com;
 
 import org.junit.Test;
 

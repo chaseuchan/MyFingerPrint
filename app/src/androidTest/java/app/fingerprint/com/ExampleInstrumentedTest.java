@@ -1,4 +1,4 @@
-package app.fingetprint.com;
+package app.fingerprint.com;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

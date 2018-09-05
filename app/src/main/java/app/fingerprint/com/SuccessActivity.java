@@ -1,4 +1,4 @@
-package app.fingetprint.com;
+package app.fingerprint.com;
 
 import android.app.Activity;
 import android.content.Intent;

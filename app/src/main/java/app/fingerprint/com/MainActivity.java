@@ -1,7 +1,6 @@
-package app.fingetprint.com;
+package app.fingerprint.com;
 
 import android.Manifest;
-import android.annotation.TargetApi;
 import android.app.KeyguardManager;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -160,11 +159,6 @@ public class MainActivity extends AppCompatActivity {
         //You can also use keyguardManager.isDeviceSecure(); but it requires API Level 23
 
     }
-    //On Click of button do authentication again
-    public void authenticateAgain(View view) {
-        authenticateApp();
-    }
-
 
     @RequiresApi(api = Build.VERSION_CODES.M)
     public boolean cipherInit() {
